@@ -1,0 +1,1041 @@
+﻿Program.Sub.ScreenSU.Start
+Gui.frmSLabel..Create(BaseForm)
+Gui.frmSLabel..Caption("SO Label")
+Gui.frmSLabel..Size(4800,4095)
+Gui.frmSLabel..MinX(0)
+Gui.frmSLabel..MinY(0)
+Gui.frmSLabel..Position(0,0)
+Gui.frmSLabel..BackColor(-2147483633)
+Gui.frmSLabel..MaxButton(False)
+Gui.frmSLabel..MinButton(False)
+Gui.frmSLabel..MousePointer(0)
+Gui.frmSLabel..Event(UnLoad,frmSLabel_UnLoad)
+Gui.frmSLabel..AlwaysOnTop(False)
+Gui.frmSLabel..FontName("Tahoma")
+Gui.frmSLabel..FontSize(8.25)
+Gui.frmSLabel..ControlBox(True)
+Gui.frmSLabel..Moveable(True)
+Gui.frmSLabel..Sizeable(True)
+Gui.frmSLabel..ShowInTaskBar(True)
+Gui.frmSLabel..TitleBar(True)
+Gui.frmSLabel.lbl1.Create(Label,"Starting Ship Date",True,1440,255,0,210,360,True,0,"Arial",8,-2147483633,0)
+Gui.frmSLabel.lbl1.BorderStyle(0)
+Gui.frmSLabel.lbl2.Create(Label,"Ending Ship Date",True,1500,255,0,210,765,True,0,"Arial",8,-2147483633,0)
+Gui.frmSLabel.lbl2.BorderStyle(0)
+Gui.frmSLabel.dtpshipfrom.Create(DatePicker)
+Gui.frmSLabel.dtpshipfrom.Size(1440,285)
+Gui.frmSLabel.dtpshipfrom.Position(1890,285)
+Gui.frmSLabel.dtpshipfrom.Enabled(True)
+Gui.frmSLabel.dtpshipfrom.Visible(True)
+Gui.frmSLabel.dtpshipfrom.Zorder(0)
+Gui.frmSLabel.dtpshipfrom.CheckBox(False)
+Gui.frmSLabel.dtpshipfrom.FontName("Tahoma")
+Gui.frmSLabel.dtpshipfrom.FontSize(8.25)
+Gui.frmSLabel.dtpshipto.Create(DatePicker)
+Gui.frmSLabel.dtpshipto.Size(1455,285)
+Gui.frmSLabel.dtpshipto.Position(1890,675)
+Gui.frmSLabel.dtpshipto.Enabled(True)
+Gui.frmSLabel.dtpshipto.Visible(True)
+Gui.frmSLabel.dtpshipto.Zorder(0)
+Gui.frmSLabel.dtpshipto.CheckBox(False)
+Gui.frmSLabel.dtpshipto.FontName("Tahoma")
+Gui.frmSLabel.dtpshipto.FontSize(8.25)
+Gui.frmSLabel.lbl3.Create(Label,"Customer",True,990,255,0,705,1230,True,0,"Arial",8,-2147483633,0)
+Gui.frmSLabel.lbl3.BorderStyle(0)
+Gui.frmSLabel.txtcustomer.Create(TextBox,"",True,1440,300,0,1890,1155,True,0,"Arial",8,-2147483643,1)
+Gui.frmSLabel.txtcustomer.MaxLength(6)
+Gui.frmSLabel.chkCust.Create(CheckBox)
+Gui.frmSLabel.chkCust.Size(255,300)
+Gui.frmSLabel.chkCust.Position(3840,1125)
+Gui.frmSLabel.chkCust.Event(Click,chkCust_Click)
+Gui.frmSLabel.chkCust.Enabled(True)
+Gui.frmSLabel.chkCust.Visible(True)
+Gui.frmSLabel.chkCust.Zorder(0)
+Gui.frmSLabel.chkCust.Caption("")
+Gui.frmSLabel.chkCust.FontName("Tahoma")
+Gui.frmSLabel.chkCust.FontSize(8.25)
+Gui.frmSLabel.chkCust.Value(1)
+Gui.frmSLabel.chkCust.DefaultValue(1)
+Gui.frmSLabel.lbl4.Create(Label,"Customer Ship To",True,1560,255,0,210,1695,True,0,"Arial",8,-2147483633,0)
+Gui.frmSLabel.lbl4.BorderStyle(0)
+Gui.frmSLabel.lbl5.Create(Label,"SO Number",True,1035,255,0,660,2190,True,0,"Arial",8,-2147483633,0)
+Gui.frmSLabel.lbl5.BorderStyle(0)
+Gui.frmSLabel.lbl6.Create(Label,"Part Number",True,1140,255,0,585,2685,True,0,"Arial",8,-2147483633,0)
+Gui.frmSLabel.lbl6.BorderStyle(0)
+Gui.frmSLabel.txtshipto.Create(TextBox,"",True,1425,300,0,1890,1635,True,0,"Arial",8,-2147483643,1)
+Gui.frmSLabel.txtSOno.Create(TextBox,"",True,1440,300,0,1890,2115,True,0,"Arial",8,-2147483643,1)
+Gui.frmSLabel.txtSOno.MaxLength(7)
+Gui.frmSLabel.txtpartno.Create(TextBox,"",True,1455,300,0,1890,2595,True,0,"Arial",8,-2147483643,1)
+Gui.frmSLabel.txtpartno.MaxLength(20)
+Gui.frmSLabel.chkShipTo.Create(CheckBox)
+Gui.frmSLabel.chkShipTo.Size(285,300)
+Gui.frmSLabel.chkShipTo.Position(3840,1605)
+Gui.frmSLabel.chkShipTo.Event(Click,chkShipTo_Click)
+Gui.frmSLabel.chkShipTo.Enabled(True)
+Gui.frmSLabel.chkShipTo.Visible(True)
+Gui.frmSLabel.chkShipTo.Zorder(0)
+Gui.frmSLabel.chkShipTo.Caption("")
+Gui.frmSLabel.chkShipTo.FontName("Tahoma")
+Gui.frmSLabel.chkShipTo.FontSize(8.25)
+Gui.frmSLabel.chkShipTo.Value(1)
+Gui.frmSLabel.chkShipTo.DefaultValue(1)
+Gui.frmSLabel.chkSO.Create(CheckBox)
+Gui.frmSLabel.chkSO.Size(255,300)
+Gui.frmSLabel.chkSO.Position(3840,2085)
+Gui.frmSLabel.chkSO.Event(Click,chkSO_Click)
+Gui.frmSLabel.chkSO.Enabled(True)
+Gui.frmSLabel.chkSO.Visible(True)
+Gui.frmSLabel.chkSO.Zorder(0)
+Gui.frmSLabel.chkSO.Caption("")
+Gui.frmSLabel.chkSO.FontName("Tahoma")
+Gui.frmSLabel.chkSO.FontSize(8.25)
+Gui.frmSLabel.chkSO.Value(1)
+Gui.frmSLabel.chkSO.DefaultValue(1)
+Gui.frmSLabel.chkPartno.Create(CheckBox)
+Gui.frmSLabel.chkPartno.Size(285,300)
+Gui.frmSLabel.chkPartno.Position(3840,2580)
+Gui.frmSLabel.chkPartno.Event(Click,chkPartno_Click)
+Gui.frmSLabel.chkPartno.Enabled(True)
+Gui.frmSLabel.chkPartno.Visible(True)
+Gui.frmSLabel.chkPartno.Zorder(0)
+Gui.frmSLabel.chkPartno.Caption("")
+Gui.frmSLabel.chkPartno.FontName("Tahoma")
+Gui.frmSLabel.chkPartno.FontSize(8.25)
+Gui.frmSLabel.chkPartno.Value(1)
+Gui.frmSLabel.chkPartno.DefaultValue(1)
+Gui.frmSLabel.cmdOk.Create(Button)
+Gui.frmSLabel.cmdOk.Size(855,375)
+Gui.frmSLabel.cmdOk.Position(240,3135)
+Gui.frmSLabel.cmdOk.Caption("Ok")
+Gui.frmSLabel.cmdOk.Event(Click,cmdOk_Click)
+Gui.frmSLabel.cmdOk.Enabled(True)
+Gui.frmSLabel.cmdOk.Visible(True)
+Gui.frmSLabel.cmdOk.Zorder(0)
+Gui.frmSLabel.cmdOk.FontName("Tahoma")
+Gui.frmSLabel.cmdOk.FontSize(8.25)
+Gui.frmSLabel.lbl7.Create(Label,"ALL",True,555,255,0,4095,1230,True,0,"Arial",8,-2147483633,0)
+Gui.frmSLabel.lbl7.BorderStyle(0)
+Gui.frmSLabel.lbl8.Create(Label,"ALL",True,555,255,0,4095,1695,True,0,"Arial",8,-2147483633,0)
+Gui.frmSLabel.lbl8.BorderStyle(0)
+Gui.frmSLabel.lbl9.Create(Label,"ALL",True,555,255,0,4095,2205,True,0,"Arial",8,-2147483633,0)
+Gui.frmSLabel.lbl9.BorderStyle(0)
+Gui.frmSLabel.lbl10.Create(Label,"ALL",True,555,255,0,4095,2700,True,0,"Arial",8,-2147483633,0)
+Gui.frmSLabel.lbl10.BorderStyle(0)
+Gui.frmSLabel.cmdcustbrow.Create(Button)
+Gui.frmSLabel.cmdcustbrow.Size(360,315)
+Gui.frmSLabel.cmdcustbrow.Position(3345,1140)
+Gui.frmSLabel.cmdcustbrow.Caption("^")
+Gui.frmSLabel.cmdcustbrow.Event(Click,cmdcustbrow_Click)
+Gui.frmSLabel.cmdcustbrow.Enabled(True)
+Gui.frmSLabel.cmdcustbrow.Visible(True)
+Gui.frmSLabel.cmdcustbrow.Zorder(0)
+Gui.frmSLabel.cmdcustbrow.FontName("Tahoma")
+Gui.frmSLabel.cmdcustbrow.FontSize(8.25)
+Gui.frmSLabel.cmdshiptobrow.Create(Button)
+Gui.frmSLabel.cmdshiptobrow.Size(360,315)
+Gui.frmSLabel.cmdshiptobrow.Position(3345,1620)
+Gui.frmSLabel.cmdshiptobrow.Caption("^")
+Gui.frmSLabel.cmdshiptobrow.Event(Click,cmdshiptobrow_Click)
+Gui.frmSLabel.cmdshiptobrow.Enabled(True)
+Gui.frmSLabel.cmdshiptobrow.Visible(True)
+Gui.frmSLabel.cmdshiptobrow.Zorder(0)
+Gui.frmSLabel.cmdshiptobrow.FontName("Tahoma")
+Gui.frmSLabel.cmdshiptobrow.FontSize(8.25)
+Gui.frmSLabel.cmdordernobrow.Create(Button)
+Gui.frmSLabel.cmdordernobrow.Size(360,315)
+Gui.frmSLabel.cmdordernobrow.Position(3345,2100)
+Gui.frmSLabel.cmdordernobrow.Caption("^")
+Gui.frmSLabel.cmdordernobrow.Event(Click,cmdordernobrow_Click)
+Gui.frmSLabel.cmdordernobrow.Enabled(True)
+Gui.frmSLabel.cmdordernobrow.Visible(True)
+Gui.frmSLabel.cmdordernobrow.Zorder(0)
+Gui.frmSLabel.cmdordernobrow.FontName("Tahoma")
+Gui.frmSLabel.cmdordernobrow.FontSize(8.25)
+Gui.frmSLabel.cmdpartnobrow.Create(Button)
+Gui.frmSLabel.cmdpartnobrow.Size(360,315)
+Gui.frmSLabel.cmdpartnobrow.Position(3360,2580)
+Gui.frmSLabel.cmdpartnobrow.Caption("^")
+Gui.frmSLabel.cmdpartnobrow.Event(Click,cmdpartnobrow_Click)
+Gui.frmSLabel.cmdpartnobrow.Enabled(True)
+Gui.frmSLabel.cmdpartnobrow.Visible(True)
+Gui.frmSLabel.cmdpartnobrow.Zorder(0)
+Gui.frmSLabel.cmdpartnobrow.FontName("Tahoma")
+Gui.frmSLabel.cmdpartnobrow.FontSize(8.25)
+Gui.frmGrid..Create(BaseForm)
+Gui.frmGrid..Caption("SO Label")
+Gui.frmGrid..Size(15750,9690)
+Gui.frmGrid..MinX(0)
+Gui.frmGrid..MinY(0)
+Gui.frmGrid..Position(0,0)
+Gui.frmGrid..BackColor(-2147483633)
+Gui.frmGrid..MinButton(False)
+Gui.frmGrid..MousePointer(0)
+Gui.frmGrid..Event(UnLoad,frmSLabel_UnLoad)
+Gui.frmGrid..AlwaysOnTop(False)
+Gui.frmGrid..FontName("Tahoma")
+Gui.frmGrid..FontSize(8.25)
+Gui.frmGrid..ControlBox(True)
+Gui.frmGrid..MaxButton(True)
+Gui.frmGrid..Moveable(True)
+Gui.frmGrid..Sizeable(True)
+Gui.frmGrid..ShowInTaskBar(True)
+Gui.frmGrid..TitleBar(True)
+Gui.frmGrid.GsGrid.Create(GsGridControl)
+Gui.frmGrid.GsGrid.Size(15105,8370)
+Gui.frmGrid.GsGrid.Position(225,180)
+Gui.frmGrid.GsGrid.Enabled(True)
+Gui.frmGrid.GsGrid.Visible(True)
+Gui.frmGrid.GsGrid.Zorder(0)
+Gui.frmGrid.cmdPrintLabel.Create(Button)
+Gui.frmGrid.cmdPrintLabel.Size(1155,375)
+Gui.frmGrid.cmdPrintLabel.Position(255,8670)
+Gui.frmGrid.cmdPrintLabel.Caption("Print Label")
+Gui.frmGrid.cmdPrintLabel.Event(Click,cmdPrintLabel_Click)
+Gui.frmGrid.cmdPrintLabel.Enabled(True)
+Gui.frmGrid.cmdPrintLabel.Visible(True)
+Gui.frmGrid.cmdPrintLabel.Zorder(0)
+Gui.frmGrid.cmdPrintLabel.FontName("Tahoma")
+Gui.frmGrid.cmdPrintLabel.FontSize(8.25)
+Gui.frmGrid.cmdALL.Create(Button)
+Gui.frmGrid.cmdALL.Size(960,375)
+Gui.frmGrid.cmdALL.Position(1530,8685)
+Gui.frmGrid.cmdALL.Caption("Select All")
+Gui.frmGrid.cmdALL.Event(Click,cmdALL_Click)
+Gui.frmGrid.cmdALL.Enabled(True)
+Gui.frmGrid.cmdALL.Visible(True)
+Gui.frmGrid.cmdALL.Zorder(0)
+Gui.frmGrid.cmdALL.FontName("Tahoma")
+Gui.frmGrid.cmdALL.FontSize(8.25)
+Gui.frmGrid.cmdALL2.Create(Button)
+Gui.frmGrid.cmdALL2.Size(1155,375)
+Gui.frmGrid.cmdALL2.Position(2595,8670)
+Gui.frmGrid.cmdALL2.Caption("DeSelect All")
+Gui.frmGrid.cmdALL2.Event(Click,cmdALL2_Click)
+Gui.frmGrid.cmdALL2.Enabled(True)
+Gui.frmGrid.cmdALL2.Visible(True)
+Gui.frmGrid.cmdALL2.Zorder(0)
+Gui.frmGrid.cmdALL2.FontName("Tahoma")
+Gui.frmGrid.cmdALL2.FontSize(8.25)
+Gui.SS_Print..create(BaseForm)
+Gui.SS_Print..caption("Select Printer")
+Gui.SS_Print..size(4320,1800)
+Gui.SS_Print..minx(0)
+Gui.SS_Print..miny(0)
+Gui.SS_Print..position(0,0)
+Gui.SS_Print..event(UnLoad,SS_Print_UnLoad)
+Gui.SS_Print..forecolor(0)
+Gui.SS_Print..BackColor(-2147483633)
+Gui.SS_Print..maxbutton(False)
+Gui.SS_Print..minbutton(False)
+Gui.SS_Print..mousepointer(0)
+Gui.SS_Print..sizeable(False)
+Gui.SS_Print..AlwaysOnTop(False)
+Gui.SS_Print..FontName("Tahoma")
+Gui.SS_Print..FontSize(8.25)
+Gui.SS_Print..ControlBox(True)
+Gui.SS_Print..Moveable(True)
+Gui.SS_Print..ShowInTaskBar(True)
+Gui.SS_Print..TitleBar(True)
+Gui.SS_Print.cboPrinter.create(combobox)
+Gui.SS_Print.cboPrinter.size(3765,330)
+Gui.SS_Print.cboPrinter.position(100,335)
+Gui.SS_Print.cboPrinter.defaultvalue("")
+Gui.SS_Print.cboPrinter.Enabled(True)
+Gui.SS_Print.cboPrinter.Visible(True)
+Gui.SS_Print.cboPrinter.Zorder(0)
+Gui.SS_Print.cboPrinter.FontName("Tahoma")
+Gui.SS_Print.cboPrinter.FontSize(8.25)
+Gui.SS_Print.lbl_cboPrinter.create(Label,"Printer",True,555,255,0,4095,2700,True,0,"Arial",8,-2147483633,0)
+Gui.SS_Print.lbl_cboPrinter.defaultvalue("")
+Gui.SS_Print.lbl_cboPrinter.BorderStyle(0)
+Gui.SS_Print.cmdPrint.create(button)
+Gui.SS_Print.cmdPrint.caption("Print")
+Gui.SS_Print.cmdPrint.size(1005,360)
+Gui.SS_Print.cmdPrint.position(105,780)
+Gui.SS_Print.cmdPrint.event(Click,PrintLabel)
+Gui.SS_Print.cmdPrint.defaultvalue("")
+Gui.SS_Print.cmdPrint.Enabled(True)
+Gui.SS_Print.cmdPrint.Visible(True)
+Gui.SS_Print.cmdPrint.Zorder(0)
+Gui.SS_Print.cmdPrint.FontName("Tahoma")
+Gui.SS_Print.cmdPrint.FontSize(8.25)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'by Ranjit for Square Deal
+
+	V.Local.dStartDate.Declare
+	V.Local.dStartDate.Set("2000-01-01")
+	F.ODBC.Connection!con.OpenCompanyConnection(1000)
+	F.ODBC.Connection!conc.OpenCommonConnection(500)
+	gui.frmSLabel.dtpshipfrom.Value(V.Local.dStartDate)
+	gui.frmSLabel..Show
+Program.Sub.Main.End
+
+Program.Sub.cmdOk_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sCustno.Declare
+	V.Local.sPartno.Declare
+	V.Local.sShipTno.Declare
+	V.Local.sSOno.Declare
+	V.Local.sSubSql.Declare
+	V.Local.sSql.Declare
+	V.Local.dtShipSDate.Declare
+	V.Local.dtShipEDate.Declare
+	
+	v.Local.i.Declare
+	v.Local.stitle.Declare
+	v.Local.iTotClmn.Declare
+	
+	V.Local.dtShipSDate.Set(v.Screen.frmSLabel!dtpshipfrom.Value)
+	V.Local.dtShipEDate.Set(v.Screen.frmSLabel!dtpshipto.Value)
+	
+	Gui.frmSLabel..Visible(false)
+
+
+	f.Intrinsic.String.Build(" where Qty_BO>0 and Flag_BOM <> 'C' and date_item_Prom between '{0}' and '{1}'",V.Local.dtShipSDate.PervasiveDate,V.Local.dtShipEDate.PervasiveDate,V.Local.sSubSql)
+	
+	f.Intrinsic.Control.If(v.Screen.frmSLabel!txtSOno.text,<>,"")
+		V.Local.sSOno.Set(v.Screen.frmSLabel!txtSOno.text)
+		f.Intrinsic.String.Build(" where c.order_no = '{0}'",V.Local.sSOno,V.Local.sSubSql)
+	f.Intrinsic.Control.Else
+		f.Intrinsic.Control.If(v.Screen.frmSLabel!chkCust.Value,<>,1)
+			f.Intrinsic.Control.If(v.Screen.frmSLabel!txtcustomer.text,<>,"")
+				V.Local.sCustno.Set(v.Screen.frmSLabel!txtcustomer.text)
+				f.Intrinsic.String.Build(" {0} and c.customer = '{1}'",V.Local.sSubSql,V.Local.sCustno,V.Local.sSubSql)
+			f.Intrinsic.Control.Else
+				f.Intrinsic.UI.Msgbox("Field cannot be Blank")
+				gui.frmSLabel.txtcustomer.SetFocus
+				f.Intrinsic.Control.ExitSub
+			f.Intrinsic.Control.EndIf	
+		f.Intrinsic.Control.EndIf
+		
+		f.Intrinsic.Control.If(v.Screen.frmSLabel!chkShipTo.Value,<>,1)
+			f.Intrinsic.Control.If(v.Screen.frmSLabel!txtshipto.text,<>,"")
+				V.Local.sShipTno.Set(v.Screen.frmSLabel!txtshipto.text)
+				f.Intrinsic.String.Build(" {0} and c.Ship_id IN {1}",V.Local.sSubSql,V.Local.sShipTno,V.Local.sSubSql)
+			f.Intrinsic.Control.Else
+				f.Intrinsic.UI.Msgbox("Field cannot be Blank")
+				gui.frmSLabel.txtshipto.SetFocus
+				f.Intrinsic.Control.ExitSub
+			f.Intrinsic.Control.EndIf	
+		f.Intrinsic.Control.EndIf
+		
+		f.Intrinsic.Control.If(v.Screen.frmSLabel!chkSO.Value,<>,1)
+			f.Intrinsic.Control.If(v.Screen.frmSLabel!txtSOno.text,<>,"")
+				V.Local.sSOno.Set(v.Screen.frmSLabel!txtSOno.text)
+				f.Intrinsic.String.Build(" {0} and c.order_no = '{1}'",V.Local.sSubSql,V.Local.sSOno,V.Local.sSubSql)
+			f.Intrinsic.Control.Else
+				f.Intrinsic.UI.Msgbox("Field cannot be Blank")
+				gui.frmSLabel.txtSOno.SetFocus
+				f.Intrinsic.Control.ExitSub
+			f.Intrinsic.Control.EndIf	
+		f.Intrinsic.Control.EndIf
+		
+		f.Intrinsic.Control.If(v.Screen.frmSLabel!chkPartno.Value,<>,1)
+			f.Intrinsic.Control.If(v.Screen.frmSLabel!txtPARTno.text,<>,"")
+				V.Local.sPartno.Set(v.Screen.frmSLabel!txtPARTno.text)
+				f.Intrinsic.String.Build(" {0} and Part = '{1}'",V.Local.sSubSql,V.Local.sPartno,V.Local.sSubSql)
+			f.Intrinsic.Control.Else
+				f.Intrinsic.UI.Msgbox("Field cannot be Blank")
+				gui.frmSLabel.txtPARTno.SetFocus
+				f.Intrinsic.Control.ExitSub
+			f.Intrinsic.Control.EndIf
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.EndIf
+	
+	gui.frmSLabel.cmdOk.Enabled(false)
+
+	V.Local.sSql.Set("select b.order_no,c.Customer,c.Ship_id,b.record_no,rtrim(b.Part) as Part,Qty_BO,date_item_Prom")
+'	f.Intrinsic.String.Build(" {0},IF(ISNUMERIC(b.user_3) = 1, CONVERT(b.user_3, SQL_INTEGER), 0) as PKG_Qty,b.user_1 as 'Location', b.user_2 as 'Bin',CUSTOMER_PO,date_ship,Qty_OnHand,a.Bin as InvBin",V.Local.sSql,V.Local.sSql)
+	f.Intrinsic.String.Build(" {0},IF(CONVERT(b.user_3, SQL_INTEGER) = 0, Qty_BO, CONVERT(b.user_3, SQL_INTEGER)) as PKG_Qty,b.user_1 as 'Location', b.user_2 as 'Bin',CUSTOMER_PO,date_ship,0 as Qty_OnHand,'' as InvBin,'' as PL",V.Local.sSql,V.Local.sSql)
+	f.Intrinsic.String.Build(" {0} from v_order_lines b join v_order_header c on b.order_no = c.order_no {1} order by b.order_no,b.record_no",V.Local.sSql,V.Local.sSubSql,V.Local.sSql)
+
+
+'	V.Local.sSql.Set("select b.order_no,c.Customer,c.Ship_id,b.record_no,b.Part,Qty_BO,date_item_Prom")
+''	f.Intrinsic.String.Build(" {0},IF(ISNUMERIC(b.user_3) = 1, CONVERT(b.user_3, SQL_INTEGER), 0) as PKG_Qty,b.user_1 as 'Location', b.user_2 as 'Bin',CUSTOMER_PO,date_ship,Qty_OnHand,a.Bin as InvBin",V.Local.sSql,V.Local.sSql)
+'	f.Intrinsic.String.Build(" {0},IF(CONVERT(b.user_3, SQL_INTEGER) = 0, Qty_BO, CONVERT(b.user_3, SQL_INTEGER)) as PKG_Qty,b.user_1 as 'Location', b.user_2 as 'Bin',CUSTOMER_PO,date_ship,Qty_OnHand,a.Bin as InvBin,a.Product_Line as PL",V.Local.sSql,V.Local.sSql)
+'	f.Intrinsic.String.Build(" {0} from v_inventory_mstr a join v_order_lines b on a.PART = b.PART join v_order_header c on b.order_no = c.order_no {1} order by b.order_no,b.record_no",V.Local.sSql,V.Local.sSubSql,V.Local.sSql)
+'	
+''	
+'	V.Local.sSql.Set("select b.order_no,c.Customer,c.Ship_id,b.record_no,b.Part,Qty_BO,date_item_Prom")
+'	f.Intrinsic.String.Build(" {0},IF(ISNUMERIC(b.user_3) = 1, CONVERT(b.user_3, SQL_INTEGER), 0) as PKG_Qty,b.user_1 as 'Location', b.user_2 as 'Bin',CUSTOMER_PO,date_ship,Qty_OnHand,a.Bin as InvBin",V.Local.sSql,V.Local.sSql)
+'	f.Intrinsic.String.Build(" {0} from v_inventory_mstr a join v_order_lines b on a.PART = b.PART join v_order_header c on b.order_no = c.order_no {1} order by b.order_no,b.record_no",V.Local.sSql,V.Local.sSubSql,V.Local.sSql)
+
+
+	F.Intrinsic.Control.If(V.DataTable.DTorder.Exists)
+		F.Data.Datatable.Close("DTorder")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.UI.InvokeWaitDialog("Please Wait...","Gathering Sales Order Data...")
+	
+ 	f.Data.DataTable.CreateFromSQL("DTorder","con",V.Local.sSql,True)
+ 	
+	f.Intrinsic.Control.If(v.DataTable.DTorder.RowCount,>,0)
+		
+		
+		'records were returned, adding some columns to hold expression values...
+		f.Data.DataTable.AddColumn("DTorder","Override_Qty","long",0)
+		f.Data.DataTable.AddColumn("DTorder","SupportingLabels","Bit",1)
+		f.Data.DataTable.AddColumn("DTorder","Print","Bit",0)
+		f.Data.DataTable.AddColumn("DTorder","LBLQTY","float",0.00)
+		
+		'Create Dataview
+		F.Data.DataView.Create("DTorder","DVLines")
+		
+		f.Intrinsic.Control.CallSub(GetValue)
+		
+		F.Data.DataTable.AddExpressionColumn("DTorder", "NOofL", "Float", "IIF([Override_Qty]>0,[Override_Qty]/Convert([PKG_Qty],'System.Int32'),IIF(Convert([PKG_Qty],'System.Int32')>0,[Qty_BO]/Convert([PKG_Qty],'System.Int32'),0))")
+		F.Data.DataTable.SetValueFormat("DTorder", -1,"NOofL","LBLQTY", "#######.00")
+	
+		f.Data.DataTable.AddExpressionColumn("DTorder","EXPfld1","long","[NOofL]*100")
+		f.Data.DataTable.AddExpressionColumn("DTorder","EXPfld2","long","len(Convert([EXPfld1],'System.String'))-2")
+		
+		F.Data.DataTable.AddExpressionColumn("DTorder","Nodecimal", "string", "IIF([EXPfld2]<=0,0,substring(Convert([EXPfld1],'System.String'),1,[EXPfld2]))")
+		f.Data.DataTable.AddExpressionColumn("DTorder","Wdecimal","float","[NOofL]-Convert([Nodecimal],'System.Int32')")
+		
+		F.Data.DataTable.AddExpressionColumn("DTorder","PartD","String","Trim(substring(Part,1,17))")
+		F.Data.DataTable.AddExpressionColumn("DTorder","RevD","String","trim(substring(Part,18,3))")
+		
+		'Adding a Gridview
+		gui.frmGrid.GsGrid.AddGridViewFromDataView("GridView","DTorder","DVLines")
+		
+		'Setting some grid styles...
+		gui.frmGrid.GsGrid.GetColumnCount("GridView",v.Local.iTotClmn)
+		f.Intrinsic.Math.Sub(v.Local.iTotClmn,1,v.Local.iTotClmn)
+		f.Intrinsic.Control.For(v.Local.i,0,v.Local.iTotClmn,1)
+			gui.frmGrid.GsGrid.GetColumnNamebyIndex("GridView",v.Local.i,v.Local.stitle)
+			gui.frmGrid.GsGrid.SetColumnProperty("GridView",v.Local.stitle,"AllowEdit",False)
+			gui.frmGrid.GsGrid.setColumnProperty("GridView",v.Local.stitle,"ReadOnly",True)
+			gui.frmGrid.GsGrid.SetColumnProperty("GridView",v.Local.stitle,"HeaderFontBold",True)
+			gui.frmGrid.GsGrid.SetColumnProperty("GridView",V.Local.stitle,"HeaderForeColor",V.Enum.ThemeColors!TextOnThemeColor)
+			gui.frmGrid.GsGrid.SetColumnProperty("GridView",v.Local.stitle,"HeaderBackColor",V.Enum.ThemeColors!ThemeColorDark)
+		f.Intrinsic.Control.Next(v.Local.i)
+		
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Print","AllowEdit",True)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Print","ReadOnly",False)
+		
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","PKG_Qty","AllowEdit",True)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","PKG_Qty","ReadOnly",False)
+		
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","SupportingLabels","AllowEdit",True)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","SupportingLabels","ReadOnly",False)
+		
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Override_Qty","AllowEdit",True)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Override_Qty","ReadOnly",False)
+		
+		gui.frmGrid.GsGrid.SetGridviewProperty("GridView","OptionsViewRowAutoHeight","True")
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Print","MinWidth",50)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Print","MaxWidth",50)
+		
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","PL","MinWidth",30)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","PL","MaxWidth",30)
+		
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","SupportingLabels","MinWidth",110)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","SupportingLabels","MaxWidth",110)
+		
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Override_Qty","MaxWidth",80)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Qty_BO","MaxWidth",80)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","date_item_Prom","MaxWidth",100)
+		
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","order_no","Caption","Order No")
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","record_no","Caption","Line No")
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Ship_id","Caption","Ship ID")
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Qty_BO","Caption","Order Qty")
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","date_item_Prom","Caption","Promise Date")
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Override_Qty","Caption","Override Qty")
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Nodecimal","Caption","NoofLabels")
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","wdecimal","Caption","ExtraLabels")
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Qty_OnHand","Caption","Qty On Hand")
+'		
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","CUSTOMER_PO","visible",False)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","date_ship","visible",False)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","EXPfld1","visible",False)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","EXPfld2","visible",False)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","NOofL","visible",False)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","LBLQTY","visible",False)
+		
+		'Print 1 label with QTY as Override Qty
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Override_Qty","visible",True)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Nodecimal","visible",False)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","Wdecimal","visible",False)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","PartD","visible",False)
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView","RevD","visible",False)
+		
+		gui.frmGrid.GsGrid.SetColumnProperty("GridView", "date_item_Prom", "DisplayCustomDatetime", "d")
+		gui.frmGrid.GsGrid.SetGridviewProperty("GridView","OptionsSelectionEnableAppearanceFocusedRow","False")
+		gui.frmGrid.GsGrid.SetGridViewProperty("GridView","OptionsViewShowAutoFilterRow",True)
+		
+		gui.frmGrid.GsGrid.MainView("GridView")
+		
+		GUI.frmGrid.cmdPrintLabel.Anchor(6)
+		GUI.frmGrid.cmdALL.Anchor(6)
+		GUI.frmGrid.cmdALL2.Anchor(6)
+		
+		GUI.frmGrid.GsGrid.Anchor(15)
+		gui.frmGrid..show
+		gui.frmGrid..WindowState(2)
+	
+	f.Intrinsic.Control.Else
+		gui.frmSLabel.cmdOk.Enabled(true)
+		f.Intrinsic.UI.Msgbox("No Records to Print")
+	f.Intrinsic.Control.Endif
+	
+	F.Intrinsic.UI.CloseWaitDialog
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+	gui.frmSLabel.cmdOk.Enabled(true)
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdOk_Click.End
+
+Program.Sub.frmSLabel_UnLoad.Start
+F.Intrinsic.Control.Try
+
+	F.ODBC.Connection!Con.Close
+	F.ODBC.Connection!conc.Close
+	F.Intrinsic.Control.End
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+
+Program.Sub.frmSLabel_UnLoad.End
+
+Program.Sub.cmdcustbrow_Click.Start
+F.Intrinsic.Control.Try
+
+V.Local.sRet.Declare(String)
+
+	F.Intrinsic.UI.Browser(225,"",V.Local.sRet)
+	F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+		'Split the string and set the customer number
+		F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+		gui.frmSLabel.txtcustomer.text(V.Local.sRet(0).Trim)
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdcustbrow_Click.End
+
+Program.Sub.cmdshiptobrow_Click.Start
+	V.Local.sRet.Declare
+	V.Local.sRet1.Declare
+	V.Local.sRet2.Declare
+	V.Local.sSSQL.Declare
+	V.Local.sSubSQL.Declare
+	v.Local.ifor.Declare
+	
+	f.Intrinsic.Control.If(v.Screen.frmSLabel!txtcustomer.text,<>,"")
+		f.Intrinsic.String.Build(" and customer = '{0}' ",v.Screen.frmSLabel!txtcustomer.text,V.Local.sSubSQL)
+	f.Intrinsic.Control.else
+		f.Intrinsic.UI.Msgbox("Field cannot be Blank")
+		gui.frmSLabel.txtcustomer.SetFocus
+		f.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+
+	Function.Intrinsic.UI.SetBrowserMultiSelect(true) 
+	f.Intrinsic.String.Build("SELECT SHIP_SEQ AS 'Ship To ID', CUSTOMER_NAME AS 'Customer Name', SHIP_CITY AS 'City', SHIP_STATE AS 'State', SHIP_COUNTRY AS 'Country' FROM V_OE_MULTI_SHIP WHERE SHIP_SEQ > '' {0}",V.Local.sSubSQL,V.Local.sSSQL)
+	F.Intrinsic.UI.Browser("select ShipID","Con",V.Local.sSSQL,"Ship To ID*!*Customer Name*!*City*!*State*!*Country","80*!*100*!*80*!*80*!*80",12000,9000,V.Local.sRet)
+	
+	F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+		F.Intrinsic.String.Split(V.Local.sRet,"!*!",V.Local.sRet)
+		
+		F.Intrinsic.Control.For(v.Local.ifor,0,V.Local.sRet.UBound,1)
+			F.Intrinsic.String.Split(V.Local.sRet(v.Local.ifor),"*!*",V.Local.sRet1)
+			f.Intrinsic.Control.If(V.Local.sRet2,=,"")
+				f.Intrinsic.String.Build("'{0}'",V.Local.sRet1(0),V.Local.sRet2)
+			f.Intrinsic.Control.Else
+				f.Intrinsic.String.Build("{0},'{1}'",V.Local.sRet2,V.Local.sRet1(0),V.Local.sRet2)
+			f.Intrinsic.Control.endif
+		f.Intrinsic.Control.Next(v.Local.ifor)
+		f.Intrinsic.String.Build("({0})",V.Local.sRet2,V.Local.sRet2)
+		gui.frmSLabel.txtshipto.Text(V.Local.sRet2)
+	F.Intrinsic.Control.EndIf
+
+Program.Sub.cmdshiptobrow_Click.End
+
+Program.Sub.cmdordernobrow_Click.Start
+F.Intrinsic.Control.Try
+
+	V.Local.sRet.Declare(String)
+	V.Local.sSSQL.Declare(String)
+
+	F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+
+		V.Local.sSSQL.set("select distinct ORD.ORDER_NO,'',ORD.CUSTOMER,Ord.code_sort,customer_PO, NAME_CUSTOMER_SHIP, ADDRESS_1_SHIP, CITY_SHIP, STATE_SHIP, CODE_ZIP_SHIP from  v_ORDER_Header ORD") 
+		f.Intrinsic.String.Build(" {0} join v_order_lines DET on ORD.order_no= DET.order_no left join v_ORDER_SHIP_TO SHIP on ORD.Ship_ID = SHIP.Ship_ID and ORD.Order_no = SHIP.Order_no where DET.Record_NO < '8000' ORDER BY 1 ASC ",V.Local.sSSQL,V.Local.sSSQL) 
+		F.Intrinsic.UI.Browser("select OrderNo","Con",V.Local.sSSQL,"Order*!**!*Customer*!*Reference*!*Customer PO*!*Customer Name*!*Address*!*City*!*State*!*Zip","80*!*0*!*80*!*100*!*100*!*200*!*200*!*80*!*80*!*80",12000,9000,V.Local.sRet)
+	
+	F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+		F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+		V.Local.sRet.RedimPreserve(0,3)
+		gui.frmSLabel.txtSOno.Text(V.Local.sRet(0).Trim)
+	F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription) 
+F.Intrinsic.Control.EndTry	
+
+Program.Sub.cmdordernobrow_Click.End
+
+Program.Sub.cmdpartnobrow_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sRetBrow.Declare(String)
+	V.Local.sRet.Declare(String)
+	
+	F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+	F.Intrinsic.UI.Browser(100,"",V.Local.sRetBrow)
+	
+	F.Intrinsic.Control.If(V.Local.sRetBrow,<>,"***CANCEL***")
+		F.Intrinsic.String.Split(V.Local.sRetBrow,"*!*",V.Local.sRetBrow)
+		f.Intrinsic.String.Build("{0}{1}",V.Local.sRetBrow(0),V.Local.sRetBrow(1),V.Local.sRet)
+		gui.frmSLabel.txtpartno.Text(V.Local.sRet)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Catch		
+	F.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdpartnobrow_Click.End
+
+Program.Sub.chkCust_Click.Start
+	f.Intrinsic.Control.If(v.Screen.frmSLabel!chkCust.Value,=,1)
+		gui.frmSLabel.txtcustomer.Text("")
+		gui.frmSLabel.cmdcustbrow.Enabled(false)
+		gui.frmSLabel.txtcustomer.Enabled(false)
+	f.Intrinsic.Control.else
+		gui.frmSLabel.cmdcustbrow.Enabled(true)
+		gui.frmSLabel.txtcustomer.Enabled(true)
+	f.Intrinsic.Control.EndIf
+Program.Sub.chkCust_Click.End
+
+Program.Sub.chkShipTo_Click.Start
+	f.Intrinsic.Control.If(v.Screen.frmSLabel!chkShipTo.Value,=,1)
+		gui.frmSLabel.txtshipto.Text("")
+		gui.frmSLabel.cmdshiptobrow.Enabled(false)
+		gui.frmSLabel.txtshipto.Enabled(false)
+	f.Intrinsic.Control.else
+		gui.frmSLabel.cmdshiptobrow.Enabled(true)
+		gui.frmSLabel.txtshipto.Enabled(true)
+	f.Intrinsic.Control.EndIf
+Program.Sub.chkShipTo_Click.End
+
+Program.Sub.chkSO_Click.Start
+	f.Intrinsic.Control.If(v.Screen.frmSLabel!chkSO.Value,=,1)
+		gui.frmSLabel.txtSOno.Text("")
+		gui.frmSLabel.cmdordernobrow.Enabled(false)
+		gui.frmSLabel.txtSOno.Enabled(false)
+	f.Intrinsic.Control.else
+		gui.frmSLabel.cmdordernobrow.Enabled(true)
+		gui.frmSLabel.txtSOno.Enabled(true)
+	f.Intrinsic.Control.EndIf
+
+Program.Sub.chkSO_Click.End
+
+Program.Sub.chkPartno_Click.Start
+	f.Intrinsic.Control.If(v.Screen.frmSLabel!chkPartno.Value,=,1)
+		gui.frmSLabel.txtPARTno.Text("")
+		gui.frmSLabel.cmdpartnobrow.Enabled(false)
+		gui.frmSLabel.txtPARTno.Enabled(false)
+	f.Intrinsic.Control.else
+		gui.frmSLabel.cmdpartnobrow.Enabled(true)
+		gui.frmSLabel.txtPARTno.Enabled(true)
+	f.Intrinsic.Control.EndIf
+
+Program.Sub.chkPartno_Click.End
+
+Program.Sub.cmdPrintLabel_Click.Start
+
+f.Intrinsic.Control.Try
+	v.Local.i.Declare
+	v.Local.iLabel.Declare
+	v.Local.bMastLabel.Declare
+	v.Local.fRemainder.Declare
+	V.Local.iRemainder.Declare
+	V.Local.iDifference.Declare
+	v.Local.sSql.Declare
+	v.Local.sLOTFLD.Declare
+	v.Local.sLOT.Declare
+	v.Local.sQTYFLD.Declare
+	v.Local.sQty.Declare
+	v.Local.j.Declare(long)
+	
+'	F.Data.DataTable.AddExpressionColumn("DTorder","PartD","String","Trim(substring(Part,1,17))")
+'	F.Data.DataTable.AddExpressionColumn("DTorder","RevD","String","trim(substring(Part,18,3))")
+	
+
+	F.Intrinsic.Control.If(V.DataTable.DTPrint_1.Exists)
+		F.Data.Datatable.Close("DTPrint_1")
+		F.Data.Datatable.Close("DTPrint_2")
+		F.Data.Datatable.Close("DTPrint_3")
+	F.Intrinsic.Control.EndIf
+	
+	'Supporting Labels
+	f.Data.DataTable.Create("DTPrint_1",True)
+	f.Data.DataTable.AddColumn("DTPrint_1","order_no","string")
+	f.Data.DataTable.AddColumn("DTPrint_1","record_no","string")
+	f.Data.DataTable.AddColumn("DTPrint_1","PartD","string")
+	f.Data.DataTable.AddColumn("DTPrint_1","RevD","string")
+	f.Data.DataTable.AddColumn("DTPrint_1","date_item_Prom","string")
+	f.Data.DataTable.AddColumn("DTPrint_1","date_ship","string")
+	f.Data.DataTable.AddColumn("DTPrint_1","Location","string")
+	f.Data.DataTable.AddColumn("DTPrint_1","Bin","string")
+	f.Data.DataTable.AddColumn("DTPrint_1","CUSTOMER_PO","string")
+	f.Data.DataTable.AddColumn("DTPrint_1","Ship_id","string")
+	f.Data.DataTable.AddColumn("DTPrint_1","PKG_Qty","string")
+	f.Data.DataTable.AddColumn("DTPrint_1","CUSTOMER","string")
+	f.Data.DataTable.AddColumn("DTPrint_1","OnHand","float")
+	f.Data.DataTable.AddColumn("DTPrint_1","InvBin","string")
+	
+	'Master Labels
+	f.Data.DataTable.Create("DTPrint_2",True)
+	f.Data.DataTable.AddColumn("DTPrint_2","order_no","string")
+	f.Data.DataTable.AddColumn("DTPrint_2","record_no","string")
+	f.Data.DataTable.AddColumn("DTPrint_2","PartD","string")
+	f.Data.DataTable.AddColumn("DTPrint_2","RevD","string")
+	f.Data.DataTable.AddColumn("DTPrint_2","date_item_Prom","string")
+	f.Data.DataTable.AddColumn("DTPrint_2","date_ship","string")
+	f.Data.DataTable.AddColumn("DTPrint_2","Location","string")
+	f.Data.DataTable.AddColumn("DTPrint_2","Bin","string")
+	f.Data.DataTable.AddColumn("DTPrint_2","CUSTOMER_PO","string")
+	f.Data.DataTable.AddColumn("DTPrint_2","Ship_id","string")
+	f.Data.DataTable.AddColumn("DTPrint_2","PKG_Qty","string")
+	f.Data.DataTable.AddColumn("DTPrint_2","CUSTOMER","string")
+	f.Data.DataTable.AddColumn("DTPrint_2","OnHand","float")
+	f.Data.DataTable.AddColumn("DTPrint_2","InvBin","string")
+
+
+	'Found a decimal in "QtyLabelsRequired"...  anyting over .0 = needs a label with "leftover" qty from last carton on it.  
+	f.Data.DataView.SetFilter("DTorder","DVLines","Wdecimal>0 and Print=1")
+	f.Intrinsic.Control.For(v.Local.i,0,v.dataview.DTorder!DVLines.RowCount--,1)
+		'Supporting Label "remaining qty" math...
+		'Math is hard...
+		F.Intrinsic.Math.Div(V.Dataview.DTorder!DVLines(v.Local.i).Qty_BO!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).PKG_Qty!FieldVal,V.Local.fRemainder)
+		F.Intrinsic.Math.Floor(V.Local.fRemainder,V.Local.iRemainder)
+		F.Intrinsic.Math.Mult(V.Local.iRemainder,V.Dataview.DTorder!DVLines(v.Local.i).PKG_Qty!FieldVal,V.Local.iDifference)
+		F.Intrinsic.Math.Sub(V.Dataview.DTorder!DVLines(v.Local.i).Qty_BO!FieldVal,V.Local.iDifference,V.Local.iRemainder)
+		
+	 	'Add Supporting Label, reprenting a leftover qty of last carton, not equal to PKG_Qty
+	 	Function.Data.DataTable.AddRowByMap("DTPrint_1","order_no*!*record_no*!*PartD*!*RevD*!*date_item_Prom*!*date_ship*!*Location*!*Bin*!*CUSTOMER_PO*!*Ship_id*!*PKG_Qty*!*CUSTOMER*!*OnHand*!*InvBin",V.Dataview.DTorder!DVLines(v.Local.i).order_no!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).record_no!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).PartD!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).RevD!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).date_item_Prom!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).date_ship!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Location!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Bin!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).CUSTOMER_PO!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Ship_id!FieldVal,V.Local.iRemainder,V.Dataview.DTorder!DVLines(v.Local.i).Customer!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Qty_OnHand!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).InvBin!FieldVal)
+	 	'Add Master Label with full BO qty
+	 	Function.Data.DataTable.AddRowByMap("DTPrint_2","order_no*!*record_no*!*PartD*!*RevD*!*date_item_Prom*!*date_ship*!*Location*!*Bin*!*CUSTOMER_PO*!*Ship_id*!*PKG_Qty*!*CUSTOMER*!*OnHand*!*InvBin",V.Dataview.DTorder!DVLines(v.Local.i).order_no!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).record_no!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).PartD!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).RevD!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).date_item_Prom!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).date_ship!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Location!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Bin!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).CUSTOMER_PO!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Ship_id!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Qty_BO!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Customer!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Qty_OnHand!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).InvBin!FieldVal)
+	f.Intrinsic.Control.Next(v.Local.i)
+	
+	
+	'Add supporting labels...
+	f.Data.DataView.SetFilter("DTorder","DVLines","Nodecimal>0 and Print=1")	
+	 f.Intrinsic.Control.For(v.Local.i,0,v.dataview.DTorder!DVLines.RowCount--,1)
+	 	f.Intrinsic.Control.For(v.Local.iLabel,1,V.Dataview.DTorder!DVLines(v.Local.i).Nodecimal!FieldVal,1)
+			Function.Data.DataTable.AddRowByMap("DTPrint_1","order_no*!*record_no*!*PartD*!*RevD*!*date_item_Prom*!*date_ship*!*Location*!*Bin*!*CUSTOMER_PO*!*Ship_id*!*PKG_Qty*!*CUSTOMER*!*OnHand*!*InvBin",V.Dataview.DTorder!DVLines(v.Local.i).order_no!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).record_no!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).PartD!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).RevD!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).date_item_Prom!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).date_ship!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Location!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Bin!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).CUSTOMER_PO!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Ship_id!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).PKG_Qty!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Customer!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Qty_OnHand!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).InvBin!FieldVal)	
+		f.Intrinsic.Control.Next(v.Local.iLabel)
+	f.Intrinsic.Control.Next(v.Local.i)
+	
+	'Add master labels...
+	f.Data.DataView.SetFilter("DTorder","DVLines","Print=1")	
+	f.Intrinsic.Control.For(v.Local.i,0,v.dataview.DTorder!DVLines.RowCount--,1)
+		Function.Data.DataTable.AddRowByMap("DTPrint_2","order_no*!*record_no*!*PartD*!*RevD*!*date_item_Prom*!*date_ship*!*Location*!*Bin*!*CUSTOMER_PO*!*Ship_id*!*PKG_Qty*!*CUSTOMER*!*OnHand*!*InvBin",V.Dataview.DTorder!DVLines(v.Local.i).order_no!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).record_no!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).PartD!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).RevD!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).date_item_Prom!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).date_ship!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Location!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Bin!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).CUSTOMER_PO!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Ship_id!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Qty_BO!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Customer!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Qty_OnHand!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).InvBin!FieldVal)	
+	f.Intrinsic.Control.Next(v.Local.i)
+	
+	'Add Shipping labels...
+
+	'Master Labels
+	f.Data.DataTable.Create("DTPrint_3",True)
+	f.Data.DataTable.AddColumn("DTPrint_3","ORDER_NO","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","RECORD_NO","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","Part","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","LOT-1","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","LOT-2","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","LOT-3","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","LOT-4","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","LOT-5","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","LOT-6","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","LOT-7","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","LOT-8","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","QTY-1","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","QTY-2","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","QTY-3","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","QTY-4","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","QTY-5","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","QTY-6","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","QTY-7","string")
+	f.Data.DataTable.AddColumn("DTPrint_3","QTY-8","string")
+	
+	f.Data.DataView.SetFilter("DTorder","DVLines","Print=1")	
+	f.Intrinsic.Control.For(v.Local.i,0,v.dataview.DTorder!DVLines.RowCount--,1)
+		v.Local.j.Set(1)
+		f.Intrinsic.String.Build("select top 8 LOT,sum(Quantity) as Quantity from v_ITEM_MASTER where part = '{0}' and Quantity >0 group by  lot",V.Dataview.DTorder!DVLines(v.Local.i).Part!FieldVal,v.Local.sSql)
+		F.ODBC.Connection!con.OpenLocalRecordsetRO("rstLOT",V.Local.sSql)
+		F.Intrinsic.Control.DoUntil(V.ODBC.con!rstLOT.EOF,=,True)
+			f.Intrinsic.Control.If(v.Local.j,=,1)
+				Function.Data.DataTable.AddRowByMap("DTPrint_3","ORDER_NO*!*RECORD_NO*!*Part*!*LOT-1*!*LOT-2*!*LOT-3*!*LOT-4*!*LOT-5*!*LOT-6*!*LOT-7*!*LOT-8*!*QTY-1*!*QTY-2*!*QTY-3*!*QTY-4*!*QTY-5*!*QTY-6*!*QTY-7*!*QTY-8",V.Dataview.DTorder!DVLines(v.Local.i).order_no!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).record_no!FieldVal,V.Dataview.DTorder!DVLines(v.Local.i).Part!FieldVal,"","","","","","","","","","","","","","","","")	
+			f.Intrinsic.Control.EndIf
+
+			f.Intrinsic.String.Build("LOT-{0}",v.Local.j,v.Local.sLOTFLD)
+			f.Intrinsic.String.build("{0}",V.ODBC.con!rstLOT.FieldValTrim!LOT,v.Local.sLOT)
+			
+			Function.Intrinsic.String.Format(V.ODBC.con!rstLOT.FieldVal!Quantity,"####.00",V.local.sQty)
+			
+			f.Intrinsic.String.Build("QTY-{0}",v.Local.j,v.Local.sQTYFLD)
+			f.Intrinsic.String.build("QTY: {0}",v.Local.sQty,v.Local.sQty)
+			
+			Function.Data.DataTable.SetValue("DTPrint_3",v.DataTable.DTPrint_3.rowcount--,v.Local.sLOTFLD,v.Local.sLOT,v.Local.sQTYFLD,v.Local.sQty)
+			
+			f.Intrinsic.Math.Add(v.Local.j,1,v.Local.j)
+			F.ODBC.con!rstLOT.MoveNext
+		F.Intrinsic.Control.Loop
+		F.ODBC.con!rstLOT.Close
+		
+	f.Intrinsic.Control.Next(v.Local.i)
+
+
+
+	
+	f.Intrinsic.Control.If(v.dataTable.DTPrint_1.RowCount,>,0)
+		Gui.frmGrid..Visible(False)
+	 	F.Intrinsic.Control.CallSub(Initialize_Printer)
+	f.Intrinsic.Control.Else
+		f.Intrinsic.UI.Msgbox("No data to print SO Label")
+		f.Data.DataView.SetFilter("DTorder","DVLines","")
+	f.Intrinsic.Control.endif
+f.Intrinsic.Control.Catch
+
+	F.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+	f.Intrinsic.Control.EndTry
+Program.Sub.cmdPrintLabel_Click.End
+
+Program.Sub.TryCatch.Start
+	V.Local.sError.Declare(String)
+	Function.Intrinsic.String.Concat("Project: ",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Args.Sub,V.Ambient.NewLine,"Error Occurred ",V.Args.Error," with description ",V.Args.Desc,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Program.Sub.TryCatch.End
+
+Program.Sub.Initialize_Printer.Start
+V.Local.sSql.Declare(String)
+
+'Getting printer list for Sentinel
+V.Local.sSql.Set("Select PrinterName, SentinelAlias from SERVER_PRINTERS where SentinelEnabled = 1")
+F.ODBC.Connection!conc.OpenLocalRecordsetRO("rstPrinters",V.Local.sSql)
+F.Intrinsic.Control.DoUntil(V.ODBC.conc!rstPrinters.EOF,=,True)
+	F.Intrinsic.Control.If(V.ODBC.conc!rstPrinters.FieldValTrim!SentinelAlias,=,"")
+		Gui.SS_Print.cboPrinter.AddItem(V.ODBC.conc!rstPrinters.FieldValTrim!PrinterName)
+	F.Intrinsic.Control.Else
+		Gui.SS_Print.cboPrinter.AddItem(V.ODBC.conc!rstPrinters.FieldValTrim!SentinelAlias)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conc!rstPrinters.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.conc!rstPrinters.Close
+
+Gui.SS_Print..Show
+
+Program.Sub.Initialize_Printer.End
+
+Program.Sub.PrintLabel.Start
+	V.local.iBiRunID.Declare(long)
+	V.local.iBILogID.Declare(long)
+	V.Local.iRptid.Declare(long)
+	V.Local.iM.Declare
+	V.Local.iS.Declare
+	V.Local.sOrderNo.Declare
+	V.Local.sFilter.Declare
+	
+	F.Intrinsic.UI.InvokeWaitDialog("Please wait...","Printing Labels...")
+	
+	'For each master label, print the master and then the associated supporting labels.  Then next master then it's supporting...  so on and so forth until the end of time.
+'	F.Intrinsic.Control.For(V.Local.iM,0,V.DataTable.DTPrint_2.RowCount--,1)
+	f.Intrinsic.Control.For(v.Local.iM,0,v.dataview.DTorder!DVLines.RowCount--,1)
+		'Current Order_No in the list of master labels...  (one master label prints per order line)
+'		V.Local.sOrderNo.Set(V.DataTable.DTPrint_2(v.Local.iM).Order_No!FieldVal)
+		V.Local.sOrderNo.Set(V.Dataview.DTorder!DVLines(v.Local.iM).Order_No!FieldVal)
+'		F.Intrinsic.String.Build("Order_No='{0}'",V.Local.sOrderNo,V.Local.sFilter)
+		F.Intrinsic.String.Build("Order_No='{0}' and RECORD_NO ='{1}'",V.Local.sOrderNo,V.Dataview.DTorder!DVLines(v.Local.iM).RECORD_NO!FieldVal,V.Local.sFilter)
+		
+		F.Intrinsic.Control.If(V.DataView.DTPrint_1!dtSupportingLabels.Exists)
+			F.Data.DataView.Close("DTPrint_1","dtSupportingLabels")
+		F.Intrinsic.Control.EndIf
+		F.Data.DataView.Create("DTPrint_1","dtSupportingLabels")
+		F.Data.DataView.SetFilter("DTPrint_1","dtSupportingLabels",V.Local.sFilter)
+		
+		'DataTable for Master Labels
+		F.Intrinsic.Control.If(V.DataTable.Print_Master.Exists)
+			F.Data.Datatable.Close("Print_Master")
+		F.Intrinsic.Control.EndIf
+		F.Data.DataTable.Create("Print_Master")
+		F.Data.DataTable.AddColumn("Print_Master","ORDER_NO","String")
+		F.Data.DataTable.AddColumn("Print_Master","RECORD_NO","String")
+		F.Data.DataTable.AddColumn("Print_Master","PARTD","String")
+		F.Data.DataTable.AddColumn("Print_Master","REVD","String")
+		F.Data.DataTable.AddColumn("Print_Master","DATE_ITEM_PROM","String")
+		F.Data.DataTable.AddColumn("Print_Master","DATE_SHIP","String")
+		F.Data.DataTable.AddColumn("Print_Master","LOCATION","String")
+		F.Data.DataTable.AddColumn("Print_Master","BIN","String")
+		F.Data.DataTable.AddColumn("Print_Master","CUSTOMER_PO","String")
+		F.Data.DataTable.AddColumn("Print_Master","SHIP_ID","String")
+		F.Data.DataTable.AddColumn("Print_Master","PKG_QTY","String")
+		F.Data.DataTable.AddColumn("Print_Master","CUSTOMER","String")
+		F.Data.DataTable.AddColumn("Print_Master","ONHAND","Float")
+		F.Data.DataTable.AddColumn("Print_Master","INVBIN","String")
+		
+		
+		
+		'Add Master Label Record(s) 
+'		Function.Data.DataTable.AddRowByMap("Print_Master","ORDER_NO*!*RECORD_NO*!*PARTD*!*REVD*!*DATE_ITEM_PROM*!*DATE_SHIP*!*LOCATION*!*BIN*!*CUSTOMER_PO*!*SHIP_ID*!*PKG_QTY*!*CUSTOMER*!*ONHAND",V.DataTable.DTPrint_2(v.Local.iM).order_no!FieldVal,V.DataTable.DTPrint_2(v.Local.iM).record_no!FieldVal,V.DataTable.DTPrint_2(v.Local.iM).PartD!FieldVal,V.DataTable.DTPrint_2(v.Local.iM).RevD!FieldVal,V.DataTable.DTPrint_2(v.Local.iM).date_item_Prom!FieldVal,V.DataTable.DTPrint_2(v.Local.iM).date_ship!FieldVal,V.DataTable.DTPrint_2(v.Local.iM).Location!FieldVal,V.DataTable.DTPrint_2(v.Local.iM).Bin!FieldVal,V.DataTable.DTPrint_2(v.Local.iM).CUSTOMER_PO!FieldVal,V.DataTable.DTPrint_2(v.Local.iM).Ship_id!FieldVal,V.DataTable.DTPrint_2(v.Local.iM).PKG_Qty!FieldVal,V.DataTable.DTPrint_2(v.Local.iM).Customer!FieldVal,V.DataTable.DTPrint_2(v.Local.iM).OnHand!FieldVal)	
+		Function.Data.DataTable.AddRowByMap("Print_Master","ORDER_NO*!*RECORD_NO*!*PARTD*!*REVD*!*DATE_ITEM_PROM*!*DATE_SHIP*!*LOCATION*!*BIN*!*CUSTOMER_PO*!*SHIP_ID*!*PKG_QTY*!*CUSTOMER*!*ONHAND*!*INVBIN",V.Dataview.DTorder!DVLines(v.Local.iM).order_no!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).record_no!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).PartD!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).RevD!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).date_item_Prom!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).date_ship!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).Location!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).BIN!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).CUSTOMER_PO!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).Ship_id!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).Qty_BO!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).Customer!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).Qty_OnHand!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).INVBIN!FieldVal)	
+
+		f.Intrinsic.Control.if(V.Dataview.DTorder!DVLines(v.Local.iM).SupportingLabels!FieldVal,=,true)
+			'DataTable for Supporting Labels
+			F.Intrinsic.Control.If(V.DataTable.Print_Supporting.Exists)
+				F.Data.Datatable.Close("Print_Supporting")
+			F.Intrinsic.Control.EndIf
+			F.Data.DataTable.Create("Print_Supporting")
+			F.Data.DataTable.AddColumn("Print_Supporting","ORDER_NO","String")
+			F.Data.DataTable.AddColumn("Print_Supporting","RECORD_NO","String")
+			F.Data.DataTable.AddColumn("Print_Supporting","PARTD","String")
+			F.Data.DataTable.AddColumn("Print_Supporting","REVD","String")
+			F.Data.DataTable.AddColumn("Print_Supporting","DATE_ITEM_PROM","String")
+			F.Data.DataTable.AddColumn("Print_Supporting","DATE_SHIP","String")
+			F.Data.DataTable.AddColumn("Print_Supporting","LOCATION","String")
+			F.Data.DataTable.AddColumn("Print_Supporting","BIN","String")
+			F.Data.DataTable.AddColumn("Print_Supporting","CUSTOMER_PO","String")
+			F.Data.DataTable.AddColumn("Print_Supporting","SHIP_ID","String")
+			F.Data.DataTable.AddColumn("Print_Supporting","PKG_QTY","String")
+			F.Data.DataTable.AddColumn("Print_Supporting","CUSTOMER","String")
+			F.Data.DataTable.AddColumn("Print_Supporting","ONHAND","Float")
+			F.Data.DataTable.AddColumn("Print_Supporting","INVBIN","String")
+			
+			f.Intrinsic.Control.If(V.Dataview.DTorder!DVLines(v.Local.iM).Override_Qty!FieldVal,<=,0)
+				F.Intrinsic.Control.For(V.Local.iS,0,V.DataView.DTPrint_1!dtSupportingLabels.RowCount--,1)
+					'Add Supporting Label Record(s)
+'					f.Intrinsic.Control.If(V.Dataview.DTorder!DVLines(v.Local.iM).Override_Qty!FieldVal,<=,0)
+						Function.Data.DataTable.AddRowByMap("Print_Supporting","ORDER_NO*!*RECORD_NO*!*PARTD*!*REVD*!*DATE_ITEM_PROM*!*DATE_SHIP*!*LOCATION*!*BIN*!*CUSTOMER_PO*!*SHIP_ID*!*PKG_QTY*!*CUSTOMER*!*ONHAND*!*INVBIN",V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).order_no!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).record_no!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).PartD!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).RevD!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).date_item_Prom!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).date_ship!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).Location!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).BIN!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).CUSTOMER_PO!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).Ship_id!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).PKG_Qty!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).Customer!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).OnHand!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).INVBIN!FieldVal)	
+'					f.Intrinsic.Control.else
+'						Function.Data.DataTable.AddRowByMap("Print_Supporting","ORDER_NO*!*RECORD_NO*!*PARTD*!*REVD*!*DATE_ITEM_PROM*!*DATE_SHIP*!*LOCATION*!*BIN*!*CUSTOMER_PO*!*SHIP_ID*!*PKG_QTY*!*CUSTOMER*!*ONHAND",V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).order_no!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).record_no!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).PartD!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).RevD!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).date_item_Prom!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).date_ship!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).Location!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).INVBIN!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).CUSTOMER_PO!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).Ship_id!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).Override_Qty!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).Customer!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).OnHand!FieldVal)	
+'					f.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.Next(V.Local.iS)
+			f.Intrinsic.Control.Else
+				Function.Data.DataTable.AddRowByMap("Print_Supporting","ORDER_NO*!*RECORD_NO*!*PARTD*!*REVD*!*DATE_ITEM_PROM*!*DATE_SHIP*!*LOCATION*!*BIN*!*CUSTOMER_PO*!*SHIP_ID*!*PKG_QTY*!*CUSTOMER*!*ONHAND*!*INVBIN",V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).order_no!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).record_no!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).PartD!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).RevD!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).date_item_Prom!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).date_ship!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).Location!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).BIN!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).CUSTOMER_PO!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).Ship_id!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).Override_Qty!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).Customer!FieldVal,V.DataView.DTPrint_1!dtSupportingLabels(V.Local.iS).OnHand!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).INVBIN!FieldVal)	
+			f.Intrinsic.Control.endif
+		f.Intrinsic.Control.endif
+		
+		f.Intrinsic.Control.If(V.Dataview.DTorder!DVLines(v.Local.iM).Override_Qty!FieldVal,<=,0)
+			'Override_Qty > 0 suppress printing
+			'Print master labels
+			F.Global.BI.GetRunID(V.local.iBIRunID)
+			F.Global.BI.GetIDFromName("GCG_5742_SOLabels_Master.lab",V.Local.iRptid)
+			F.Global.BI.StartLogging(V.Local.iBIRunID,V.Local.iRptid,0,"",V.Local.iBILogID)
+			F.Global.BI.StopLogging(V.local.iBILogID)
+			F.Global.BI.PrintCodesoftLabelFromDataTable(V.local.iBIRunID,V.local.iBILogID,"Print_Master",V.Screen.SS_Print!cboPrinter.Text,True)
+		f.Intrinsic.Control.endif	
+		
+		f.Intrinsic.Control.if(V.Dataview.DTorder!DVLines(v.Local.iM).SupportingLabels!FieldVal,=,true)
+	'		Print supporting labels
+			F.Global.BI.GetRunID(V.local.iBIRunID)
+			F.Global.BI.GetIDFromName("GCG_5742_SOLabels.lab",V.Local.iRptid)
+			F.Global.BI.StartLogging(V.Local.iBIRunID,V.Local.iRptid,0,"",V.Local.iBILogID)
+			F.Global.BI.StopLogging(V.local.iBILogID)
+			F.Global.BI.PrintCodesoftLabelFromDataTable(V.local.iBIRunID,V.local.iBILogID,"Print_Supporting",V.Screen.SS_Print!cboPrinter.Text,True)
+		f.Intrinsic.Control.endif
+		
+		'Print shipping labels
+		F.Intrinsic.Control.If(V.DataView.DTPrint_3!DVPrint_3.Exists)
+			F.Data.DataView.Close("DTPrint_3","DVPrint_3")
+		F.Intrinsic.Control.EndIf
+		
+		f.Intrinsic.Control.If(V.Dataview.DTorder!DVLines(v.Local.iM).Override_Qty!FieldVal,<=,0)
+		'Override_Qty > 0 suppress printing
+			v.Local.spart.Declare
+		
+			F.Intrinsic.String.GSSPartString(V.Dataview.DTorder!DVLines(v.Local.iM).PartD!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).REVD!FieldVal,V.local.spart)
+			
+			
+			f.Intrinsic.String.Build("order_no='{0}' and record_no = '{1}' and Part = '{2}'",V.Dataview.DTorder!DVLines(v.Local.iM).order_no!FieldVal,V.Dataview.DTorder!DVLines(v.Local.iM).record_no!FieldVal,v.Local.spart.,v.Local.sFilter)
+			
+			F.Data.DataView.Create("DTPrint_3","DVPrint_3",22,v.Local.sFilter,"")
+			f.Intrinsic.Control.If(v.dataview.DTPrint_3!DVPrint_3.RowCount,>,0)
+				f.Data.DataView.ToDataTable("DTPrint_3","DVPrint_3","DTNEWPrint_3")
+				
+				F.Data.DataTable.AddColumn("DTNEWPrint_3","BIN","String",V.Dataview.DTorder!DVLines(v.Local.iM).INVBIN!FieldVal)
+				
+				F.Global.BI.GetRunID(V.local.iBIRunID)
+				F.Global.BI.GetIDFromName("GCG_5742_ShippingLabel.lab",V.Local.iRptid)
+				F.Global.BI.StartLogging(V.Local.iBIRunID,V.Local.iRptid,0,"",V.Local.iBILogID)
+				F.Global.BI.StopLogging(V.local.iBILogID)
+				F.Global.BI.PrintCodesoftLabelFromDataTable(V.local.iBIRunID,V.local.iBILogID,"DTNEWPrint_3",V.Screen.SS_Print!cboPrinter.Text,True)
+				F.Data.DataTable.Close("DTNEWPrint_3")
+			f.Intrinsic.Control.endif
+		f.Intrinsic.Control.endif
+	F.Intrinsic.Control.Next(V.Local.iM)
+	
+	
+	F.Intrinsic.Control.CallSub(frmSLabel_UnLoad)
+	
+Program.Sub.PrintLabel.End
+
+Program.Sub.cmdALL_Click.Start
+	F.Data.DataTable.SetValue("DTorder", -1,"Print",true)
+Program.Sub.cmdALL_Click.End
+
+Program.Sub.cmdALL2_Click.Start
+	F.Data.DataTable.SetValue("DTorder", -1,"Print",false)
+Program.Sub.cmdALL2_Click.End
+
+Program.Sub.SS_Print_UnLoad.Start
+	F.Intrinsic.Control.CallSub(frmSLabel_UnLoad)
+Program.Sub.SS_Print_UnLoad.End
+
+Program.Sub.GetValue.Start
+f.Intrinsic.Control.Try
+
+v.Local.sSql.Declare
+V.Local.sRet.Declare
+V.Local.sRet1.Declare
+v.Local.i.Declare
+
+	Function.Data.DataView.ToString("DTorder", "DVLines", "Part", "*!*", ",", V.Local.sRet)
+	V.Local.sRet1.Set(V.Local.sRet)
+	
+	f.Intrinsic.String.Split(V.Local.sRet,",",V.Local.sRet)
+	f.Intrinsic.String.Split(V.Local.sRet1,",",V.Local.sRet1)
+	F.Intrinsic.Control.For(v.Local.i,0,V.Local.sRet.UBound,1)
+		f.Intrinsic.String.Build("{0}",V.Local.sRet(v.Local.i),V.Local.sRet(v.Local.i))
+		f.Intrinsic.String.Build("'{0}'",V.Local.sRet1(v.Local.i),V.Local.sRet1(v.Local.i))
+	f.Intrinsic.Control.Next(v.Local.i)
+	f.Intrinsic.String.Join(V.Local.sRet,",",V.Local.sRet)
+	f.Intrinsic.String.Join(V.Local.sRet1,",",V.Local.sRet1)
+	
+	
+	f.Intrinsic.String.Build("select rtrim(Part) as Part,Qty_OnHand,Bin as InvBin,Product_Line as PL from v_inventory_mstr where PART IN ({0})",V.Local.sRet1,V.Local.sSQL)
+	F.Data.DataTable.CreateFromSQL("DTINV", "con",V.Local.sSQL)
+	
+	F.Data.Dictionary.CreateFromDataTable("DICINV","DTINV","Part","Qty_OnHand")
+	F.Data.Dictionary.SetDefaultReturn("DICINV", "0")
+	F.Data.DataTable.FillFromDictionary("DTorder", "DICINV", "Part", "Qty_OnHand")
+	F.Data.Dictionary.Close("DICINV")
+	
+	F.Data.Dictionary.CreateFromDataTable("DICINV","DTINV","Part","InvBin")
+	F.Data.Dictionary.SetDefaultReturn("DICINV", "")
+	F.Data.DataTable.FillFromDictionary("DTorder", "DICINV", "Part", "InvBin")
+	F.Data.Dictionary.Close("DICINV")
+	
+	F.Data.Dictionary.CreateFromDataTable("DICINV","DTINV","Part","PL")
+	F.Data.Dictionary.SetDefaultReturn("DICINV", "")
+	F.Data.DataTable.FillFromDictionary("DTorder", "DICINV", "Part", "PL")
+	F.Data.Dictionary.Close("DICINV")
+	
+	F.Data.DataTable.Close("DTINV")
+	
+f.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+	f.Intrinsic.Control.EndTry
+Program.Sub.GetValue.End
+
+Program.Sub.Comments.Start
+${$0$}$$}$$}$11/19/2019 1:19:32 PM$}$False
+${$5$}$3.0.0.0$}$0
+${$6$}$rnair$}$20201202151027709$}$JUGEdtlNdgRUPvge2DQ26QlJ++3xMCFe4mpE/ukO2AZ/zsQ58l8rHnfjmgeTmNIHneL35vpwgVg=
+Program.Sub.Comments.End
